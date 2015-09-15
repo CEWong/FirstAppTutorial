@@ -1,8 +1,6 @@
 package com.example.cewon_000.myfirstapp;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -50,6 +48,12 @@ public class MyActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
 
 
+        startActivity(intent);
+    }
+
+    /** Called when the user clicks the Image button */
+    public void displayDroid(View view){
+        Intent intent = new Intent(this, DisplayAndroidActivity.class);
         startActivity(intent);
     }
 }

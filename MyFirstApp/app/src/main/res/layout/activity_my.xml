@@ -2,25 +2,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <EditText android:id="@+id/edit_message"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText android:id="@+id/edit_message"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Enter a Message" />
-
-    <Button
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnSubmit2"
         android:id="@+id/btnSubmit"
         android:onClick="sendMessage" />
+    </LinearLayout>
 
-    <Button
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Picture"
+        android:layout_centerHorizontal="true"
+        android:id="@id/btnImage"
+        android:text="@string/btnImage"
         android:onClick="DisplayAndroidActivity"  />
+    </RelativeLayout>
 
 </LinearLayout>

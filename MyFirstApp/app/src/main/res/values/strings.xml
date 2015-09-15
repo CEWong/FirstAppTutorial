@@ -11,4 +11,6 @@
     <string name="title_activity_display_android">Display Android</string>
     <string name="btnSubmit">Send</string>
     <string name="btnSubmit2">Submit</string>
+    <string name="android_penguin_description">Android Penguin</string>
+    <string name="btnImage">Image</string>
 </resources>
